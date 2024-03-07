@@ -32,7 +32,7 @@ const navbarButton = document.getElementById("nav-buttons");
 
 const homebody = document.getElementById("home-body");
 
-if (user_id != 'undefined' && token!='undefined') {
+if (user_id && token) {
   navbarButton.innerHTML = ` <a id="logoutBtn" class="btn btn-danger" >Logout</a>`;
   
   document.getElementById('logoutBtn').addEventListener('click', logout);
